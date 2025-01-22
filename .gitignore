@@ -37,4 +37,6 @@ __pycache__
 *.mtl
 k-wave-python/
 *.svg
-
+*.ipynb_checkpoints
+.npy
+*.out
