@@ -84,7 +84,18 @@ singularity exec --nv \  # use GPU
   python /workspace/demos/kidney/my_test.py # find python file under workspace
 ```
 
+#### Running Jupyter in Singularity
 
+```shell
+singularity shell --writable --fakeroot my-image  # login container
+>(in container) python3 -m notebook --no-browser --ip=0.0.0.0 --port=8888 --allow-root
+# now look for the token url: http://localhost:8888/?token=abc123...
+# in another terminal, setup ssh tunnel
+ssh -L 8888:localhost:8888 yourusername@login.hcp.edu (-t ssh compute-2-4)
+```
+now paste the URL into local browser
+
+#### Troubleshooting
 
 | Issue                 | Error message                                                | Solutions                                                    |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
