@@ -75,7 +75,7 @@ plt.imshow(body_mask[:,:, index], alpha=(body_mask[:,:, index]>0)*0.9, cmap='Red
 num_transducers = 1
 
 transducers = [transducer.Focused(max_frequency = 2e6,
-                                  elements = 128, 
+                                  elements = 32, #128
                                   width = 20e-3,
                                   height =  20e-3,
                                   sensor_sampling_scheme = 'not_centroid', 

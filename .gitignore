@@ -40,3 +40,4 @@ k-wave-python/
 *.ipynb_checkpoints
 .npy
 *.out
+experiment_files
