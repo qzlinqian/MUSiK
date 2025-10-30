@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -p mit_normal_gpu --gres=gpu:h200:8
+#SBATCH -p mit_normal_gpu --gres=gpu:h200:1
 
 module load miniforge
 

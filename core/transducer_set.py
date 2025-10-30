@@ -252,7 +252,7 @@ class TransducerSet:
                 [
                     0,
                     0,
-                    (np.amax(phantom_coords[:, 2]) - np.amin(phantom_coords[:, 2])) / 2,
+                    0, #(np.amax(phantom_coords[:, 2]) - np.amin(phantom_coords[:, 2])) / 2,
                 ]
             )  # center in z
             ax.scatter(

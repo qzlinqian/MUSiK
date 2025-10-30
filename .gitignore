@@ -39,3 +39,4 @@ k-wave-python/
 .npy
 *.out
 experiment_files
+*.png

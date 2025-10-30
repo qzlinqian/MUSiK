@@ -2,12 +2,10 @@
 
 # #SBATCH -p mit_normal_gpu
 
-#SBATCH -p mit_normal_gpu --gres=gpu:h100:2
+#SBATCH -p mit_normal_gpu --gres=gpu:l40s:2
 #SBATCH -c 32
 #SBATCH -t 06:00:00
 #SBATCH --mem=88G
-
-module load miniforge
 
 # source ~/.conda/envs/image/bin/python
 # source activate cleanenv
